@@ -9,7 +9,7 @@ pipeline {
             
          }
          
-         stage ('docker build') {
+         stage ('docker build and deploy') {
             steps {
                 sh "docker build -t node-app:latest ."
                 echo "docker build completed"
